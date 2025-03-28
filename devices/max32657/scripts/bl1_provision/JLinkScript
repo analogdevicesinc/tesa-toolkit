@@ -1,0 +1,10 @@
+h
+r
+// load user final fw, the target fw can be loaded by this script as below
+// loadfile tfm_merged.hex
+// load provision fw
+loadfile bl1_provision.elf
+// Set PC to the entry point (Reset_Handler)
+SetPC 0x30000ba0
+g
+q
