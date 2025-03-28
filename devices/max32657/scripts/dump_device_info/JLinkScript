@@ -1,0 +1,7 @@
+h
+r
+loadfile dump_device_info.elf
+// Set PC to the entry point (Reset_Handler)
+SetPC 0x30000ab4
+g
+q
